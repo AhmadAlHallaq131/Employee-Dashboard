@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+    <div class="container py-5">
+        <div class="row mb-4">
+            <div class="col-md-8 d-flex align-items-center mt-2 mb-2">
+                <svg style="width: 50px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="#247e3d" d="M96 0C60.7 0 32 28.7 32 64v384c0 35.3 28.7 64 64 64h288c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H96zm112 288h64c44.2 0 80 35.8 80 80 0 8.8-7.2 16-16 16H160c-8.8 0-16-7.2-16-16 0-44.2 35.8-80 80-80zm-32-96a64 64 0 1 1 128 0 64 64 0 1 1-128 0zM512 80c0-8.8-7.2-16-16-16s-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V80zM496 192c-8.8 0-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16v-64c0-8.8-7.2-16-16-16zm16 144c0-8.8-7.2-16-16-16s-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16v-64z"/>
+                </svg>
+                <h2 class="ms-3 fw-bold">Vacation Requests</h2>
+            </div>
+            <div class="col-md-4 mt-2 mb-2">
+                <div class="input-group">
+                    <span class="input-group-text bg-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#198754" class="bi bi-search">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.397h-.001a1 1 0 0 0 .166 1.408l3.85 3.85a1 1 0 0 0 1.415-1.415l-3.85-3.85a1 1 0 0 0-1.408-.166zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                    </span>
+                    <input type="text" class="form-control" id="search-input" placeholder="Search...">
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="select-all">
+                    <label class="form-check-label" for="select-all">Select All</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-3">
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow-sm p-3">
+                    <div class="d-flex align-items-center mb-2">
+                        <img src="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1725494400&semt=ais_hybrid" height="65" class="rounded-circle me-3" style="width: 60px;" alt="Profile Picture">
+                        <h5 class="mb-0">Ahmad Azmi</h5>
+                    </div>
+                    <div class="mb-2 text-start">
+                        <span class="text-muted ">Submitted on:</span>
+                        <p class="mb-0">1/3/2024</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="text-start">
+                            <span class="text-muted">Duration:</span>
+                            <p class="mb-0">2 Weeks (1/4/2023 - 14/4/2023)</p>
+                        </div>
+                        <button class="rounded bg-success w px-5 border-0 py-1">Approve</button>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="text-start">
+                            <span class="text-muted">Salary:</span>
+                            <p class="mb-0">1000 AED</p>
+                        </div>
+                        <button class="rounded border bg-body border-success text-success mt-3 px-5 py-1">Decline</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow-sm p-3">
+                    <div class="d-flex align-items-center mb-2">
+                        <img src="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1725494400&semt=ais_hybrid" height="65" class="rounded-circle me-3" style="width: 60px;" alt="Profile Picture">
+                        <h5 class="mb-0">Ahmad Azmi</h5>
+                    </div>
+                    <div class="mb-2 text-start">
+                        <span class="text-muted ">Submitted on:</span>
+                        <p class="mb-0">1/3/2024</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="text-start">
+                            <span class="text-muted">Duration:</span>
+                            <p class="mb-0">2 Weeks (1/4/2023 - 14/4/2023)</p>
+                        </div>
+                        <button class="rounded bg-success w px-5 border-0 py-1">Approve</button>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="text-start">
+                            <span class="text-muted">Salary:</span>
+                            <p class="mb-0">1000 AED</p>
+                        </div>
+                        <button class="rounded border bg-body border-success text-success mt-3 px-5 py-1">Decline</button>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Vacation Request Card -->
+                         <!-- Start of Vacation Request Card -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow-sm p-3">
+                    <div class="d-flex align-items-center mb-2">
+                        <img src="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1725494400&semt=ais_hybrid" height="65" class="rounded-circle me-3" style="width: 60px;" alt="Profile Picture">
+                        <h5 class="mb-0">Ahmad Azmi</h5>
+                    </div>
+                    <div class="mb-2 text-start">
+                        <span class="text-muted ">Submitted on:</span>
+                        <p class="mb-0">1/3/2024</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="text-start">
+                            <span class="text-muted">Duration:</span>
+                            <p class="mb-0">2 Weeks (1/4/2023 - 14/4/2023)</p>
+                        </div>
+                        <button class="rounded bg-success w px-5 border-0 py-1">Approve</button>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="text-start">
+                            <span class="text-muted">Salary:</span>
+                            <p class="mb-0">1000 AED</p>
+                        </div>
+                        <button class="rounded border bg-body border-success text-success mt-3 px-5 py-1">Decline</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow-sm p-3">
+                    <div class="d-flex align-items-center mb-2">
+                        <img src="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1725494400&semt=ais_hybrid" height="65" class="rounded-circle me-3" style="width: 60px;" alt="Profile Picture">
+                        <h5 class="mb-0">Ahmad Azmi</h5>
+                    </div>
+                    <div class="mb-2 text-start">
+                        <span class="text-muted ">Submitted on:</span>
+                        <p class="mb-0">1/3/2024</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="text-start">
+                            <span class="text-muted">Duration:</span>
+                            <p class="mb-0">2 Weeks (1/4/2023 - 14/4/2023)</p>
+                        </div>
+                        <button class="rounded bg-success w px-5 border-0 py-1">Approve</button>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="text-start">
+                            <span class="text-muted">Salary:</span>
+                            <p class="mb-0">1000 AED</p>
+                        </div>
+                        <button class="rounded border bg-body border-success text-success mt-3 px-5 py-1">Decline</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow-sm p-3">
+                    <div class="d-flex align-items-center mb-2">
+                        <img src="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1725494400&semt=ais_hybrid" height="65" class="rounded-circle me-3" style="width: 60px;" alt="Profile Picture">
+                        <h5 class="mb-0">Ahmad Azmi</h5>
+                    </div>
+                    <div class="mb-2 text-start">
+                        <span class="text-muted ">Submitted on:</span>
+                        <p class="mb-0">1/3/2024</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="text-start">
+                            <span class="text-muted">Duration:</span>
+                            <p class="mb-0">2 Weeks (1/4/2023 - 14/4/2023)</p>
+                        </div>
+                        <button class="rounded bg-success w px-5 border-0 py-1">Approve</button>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="text-start">
+                            <span class="text-muted">Salary:</span>
+                            <p class="mb-0">1000 AED</p>
+                        </div>
+                        <button class="rounded border bg-body border-success text-success mt-3 px-5 py-1">Decline</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow-sm p-3">
+                    <div class="d-flex align-items-center mb-2">
+                        <img src="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1725494400&semt=ais_hybrid" height="65" class="rounded-circle me-3" style="width: 60px;" alt="Profile Picture">
+                        <h5 class="mb-0">Ahmad Azmi</h5>
+                    </div>
+                    <div class="mb-2 text-start">
+                        <span class="text-muted ">Submitted on:</span>
+                        <p class="mb-0">1/3/2024</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="text-start">
+                            <span class="text-muted">Duration:</span>
+                            <p class="mb-0">2 Weeks (1/4/2023 - 14/4/2023)</p>
+                        </div>
+                        <button class="rounded bg-success w px-5 border-0 py-1">Approve</button>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="text-start">
+                            <span class="text-muted">Salary:</span>
+                            <p class="mb-0">1000 AED</p>
+                        </div>
+                        <button class="rounded border bg-body border-success text-success mt-3 px-5 py-1">Decline</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow-sm p-3">
+                    <div class="d-flex align-items-center mb-2">
+                        <img src="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1725494400&semt=ais_hybrid" height="65" class="rounded-circle me-3" style="width: 60px;" alt="Profile Picture">
+                        <h5 class="mb-0">Ahmad Azmi</h5>
+                    </div>
+                    <div class="mb-2 text-start">
+                        <span class="text-muted ">Submitted on:</span>
+                        <p class="mb-0">1/3/2024</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="text-start">
+                            <span class="text-muted">Duration:</span>
+                            <p class="mb-0">2 Weeks (1/4/2023 - 14/4/2023)</p>
+                        </div>
+                        <button class="rounded bg-success w px-5 border-0 py-1">Approve</button>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="text-start">
+                            <span class="text-muted">Salary:</span>
+                            <p class="mb-0">1000 AED</p>
+                        </div>
+                        <button class="rounded border bg-body border-success text-success mt-3 px-5 py-1">Decline</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow-sm p-3">
+                    <div class="d-flex align-items-center mb-2">
+                        <img src="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1725494400&semt=ais_hybrid" height="65" class="rounded-circle me-3" style="width: 60px;" alt="Profile Picture">
+                        <h5 class="mb-0">Ahmad Azmi</h5>
+                    </div>
+                    <div class="mb-2 text-start">
+                        <span class="text-muted ">Submitted on:</span>
+                        <p class="mb-0">1/3/2024</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="text-start">
+                            <span class="text-muted">Duration:</span>
+                            <p class="mb-0">2 Weeks (1/4/2023 - 14/4/2023)</p>
+                        </div>
+                        <button class="rounded bg-success w px-5 border-0 py-1">Approve</button>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="text-start">
+                            <span class="text-muted">Salary:</span>
+                            <p class="mb-0">1000 AED</p>
+                        </div>
+                        <button class="rounded border bg-body border-success text-success mt-3 px-5 py-1">Decline</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow-sm p-3">
+                    <div class="d-flex align-items-center mb-2">
+                        <img src="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1725494400&semt=ais_hybrid" height="65" class="rounded-circle me-3" style="width: 60px;" alt="Profile Picture">
+                        <h5 class="mb-0">Ahmad Azmi</h5>
+                    </div>
+                    <div class="mb-2 text-start">
+                        <span class="text-muted ">Submitted on:</span>
+                        <p class="mb-0">1/3/2024</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="text-start">
+                            <span class="text-muted">Duration:</span>
+                            <p class="mb-0">2 Weeks (1/4/2023 - 14/4/2023)</p>
+                        </div>
+                        <button class="rounded bg-success w px-5 border-0 py-1">Approve</button>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="text-start">
+                            <span class="text-muted">Salary:</span>
+                            <p class="mb-0">1000 AED</p>
+                        </div>
+                        <button class="rounded border bg-body border-success text-success mt-3 px-5 py-1">Decline</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" d-flex justify-content-center mt-3">
+            <div class="pagination-container">
+                <ul class="pagination custom-pagination">
+                    <li class="page-item">
+                        <a class="page-link prev" href="#" onclick="navigateToPrevious()">
+                            <span aria-hidden="true">&lt;</span>
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link active" href="#" onclick="navigateTo()">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" onclick="navigateTo()">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" onclick="navigateTo()">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link next" href="#" onclick="navigateToNext()">
+                            <span aria-hidden="true">&gt;</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
